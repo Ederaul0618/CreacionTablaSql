@@ -1,32 +1,25 @@
 use triage;
-/*borra base Triage */
-/*drop table triage.registros;
+*.sql linguist-language=TSQL
 
-select *from afiliados;
-/*crea la tabla en sql server*/
-CREATE TABLE triage.registros (
+CREATE TABLE Triage (
+    id INT IDENTITY PRIMARY KEY,
     nomina VARCHAR(50),
     nombre VARCHAR(150),
-    cliente VARCHAR(150),
     sexo VARCHAR(20),
     edad INT,
     medico VARCHAR(150),
-    puntaje int,
-    fecha DATETIME,
+    fecha_hora DATETIME,
     pregunta_1 INT,
     pregunta_2 INT,
     pregunta_3 INT,
     pregunta_4 INT,
-    observaciones_4 VARCHAR(255),
     pregunta_5 INT,
     pregunta_6 INT,
 	pregunta_7 INT,
-    observaciones_7 VARCHAR(255),
 	pregunta_8 INT,
 	pregunta_9 INT,
-    Ingreso varchar (255),
-    hospital varchar (255),
-    observaciones VARCHAR(255)
+	pregunta_10 INT,
+	pregunta_11 INT
+
+
 	)
-/*tabla creada*/	
-	select *from triage.registros
